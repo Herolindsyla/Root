@@ -38,13 +38,38 @@ main {
     padding: 130px 16px;
 }
 
-.home {
-    background: url(https://preview.colorlib.com/theme/eatery/img/xhero_2.jpg.pagespeed.ic.uUyCgDo_bm.webp) no-repeat;
-    background-size: cover;
+.home  {
+    background-image: url(../assets/main-pic-1.webp);
+    background-size: cover; 
     height: calc(100vh);
     background-position: center center;
     min-height: 700px;
     position: relative;
+    display: block;
+}
+
+.home .in-bl {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.home ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.home ul li {
+    display: flex;
+    justify-content: center;
+    margin: 0 5px;
+    padding: 3.6px;
+    cursor: pointer;
+    background-color: var(--basic-white);
+    border: 1px solid var(--basic-white);
+    opacity: .4;
+    border-radius: 50%;
+    z-index: 9999;
 }
 
 .home:before {
@@ -61,7 +86,7 @@ main {
 main .container {
     position: relative;
     z-index: 999999;
-    margin: 0 auto;
+    margin-top: 40px;
     width: 720px;
 }
 
