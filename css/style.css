@@ -39,13 +39,14 @@ main {
 }
 
 .home  {
+    display: block;
+    position: relative;
     background-image: url(../assets/main-pic-1.webp);
     background-size: cover; 
     height: calc(100vh);
     background-position: center center;
     min-height: 700px;
-    position: relative;
-    display: block;
+    transition: all 1s ease;
 }
 
 .home .in-bl {

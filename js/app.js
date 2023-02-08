@@ -7,15 +7,17 @@ let active_image_index = 0
 setInterval(() => {
     active_image_index++
 
-    if(active_image_index >= assets.length) active_image_index = 0
+    if(active_image_index >= assets.length) {
+    active_image_index = 0
     document.querySelector('.home').style.backgroundImage = `url(assets/${assets[active_image_index]})`
+    }
 }, 5000)
 
 
 
 const home = document.querySelector('.home')
 
-home.style.backgroundImage = `url('src', assets/${assets[0]})`
+// home.style.backgroundImage = `url('src', assets/${assets[0]})`
 
 function createSliderPages() {
     for(let i = 0; i < assets.length; i++) {
@@ -27,11 +29,10 @@ function createSliderPages() {
         document.querySelector('#dot-slider').appendChild(li)
 
         li.addEventListener('click', e => {
-            img.src = `assets/${e.target.getAttribute('data-target')}`
+            home.style.backgroundImage = `url('assets/${e.target.getAttribute('data-target')}'`
         })
     }
 }
 
 createSliderPages()
-
 
